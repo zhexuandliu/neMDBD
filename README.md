@@ -14,9 +14,9 @@ The package is tested under R version 4.2.1 on Mac OS, and requires the R packag
 To install the package from the github repository, use:
 
 ``` r
-# if(!require(devtools)) install.packages("devtools") # If not already installed
-# devtools::install_github("zhexuandliu/RtsneWithP")
-# devtools::install_github("zhexuandliu/neMDBD")
+if(!require(devtools)) install.packages("devtools") # If not already installed
+devtools::install_github("zhexuandliu/RtsneWithP")
+devtools::install_github("zhexuandliu/neMDBD")
 ```
 
 ## Usage
