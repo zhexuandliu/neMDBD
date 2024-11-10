@@ -54,7 +54,7 @@ ggplot() +
 
 ### Perturbation score
 
-The perturbation score is now available for t-SNE algorithm.
+The perturbation score is available for t-SNE algorithm.
 
 #### Inputs
 
@@ -180,6 +180,8 @@ ggplot() +
 ![](tools/unnamed-chunk-10-2.png)<!-- -->
 
 ### Singularity score
+
+The singularity score is available for t-SNE algorithm.
 
 #### Inputs
 
