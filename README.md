@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Map discontinuity-based diagnosis for neighbor embedding methods
+# Map discontinuity based diagnosis for neighbor embedding methods
 
 ## Installation
 
@@ -9,8 +9,8 @@ To install the package from the github repository, use:
 
 ``` r
 # if(!require(devtools)) install.packages("devtools") # If not already installed
-# devtools::install_github("zhexuandliu/neMDBD")
 # devtools::install_github("zhexuandliu/RtsneWithP")
+# devtools::install_github("zhexuandliu/neMDBD")
 ```
 
 ## Usage
@@ -154,11 +154,6 @@ pscore = perturbation_score_compute(X, tsne_out$Y, perplexity, length = 0.5, app
 ### Pre-screening of points on the peripheries using 'dbscan'
 ### Most of the points with large perturbation scores are identified.
 library(dbscan)
-#> 
-#> Attaching package: 'dbscan'
-#> The following object is masked from 'package:stats':
-#> 
-#>     as.dendrogram
 ind = which(!dbscan::is.corepoint(tsne_out$Y, eps = 1, minPts = 10))
 pscore = rep(NA, dim(X)[1])
 pscore[ind] = perturbation_score_compute(X, tsne_out$Y, perplexity, length = 0.5, approx = 2, ind = ind, no.cores = 8) # took 2.499s on a MacBook Air (M2 chip)
