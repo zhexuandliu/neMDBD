@@ -5,7 +5,7 @@
 
 The package is an implementation based on the paper:
 
-Liu, Z., Ma, R., Zhong, Y. (2024) Assessing and improving reliability of neighbor embedding methods: a map-continuity perspective. arXiv:2410.16608.
+Liu, Z., Ma, R., Zhong, Y. Assessing and improving reliability of neighbor embedding methods: a map-continuity perspective. *Nature Communications* (2025) 16:5037.
 
 The package is tested under R version 4.2.1 on Mac OS, and requires the R packages: `Rfast` (version 2.1.0), `parellel` (version 4.2.1), `RtsneWithP`. The installation of the package took about 5s on a MacBook Air (M2 chip).
 
